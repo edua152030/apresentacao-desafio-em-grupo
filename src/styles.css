@@ -14,3 +14,14 @@ body {
     top: 0;
     left: 0;
 }
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    margin-top: 40px;
+    width: 35rem;
+    height: 20rem;
+}
