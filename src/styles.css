@@ -16,11 +16,17 @@ body {
     left: 0;
 }
 
+#logo{
+    margin-top: 0;
+    height: 200px;
+}
+
 header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation: 3s animacaoFundo infinite;
 }
 
 .tenor-gif-embed {
@@ -35,6 +41,61 @@ img {
     height: 20rem;
 }
 
+.imgnaruto{
+    animation: 5s animacao;
+    float: left;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+}
+
+#img1{
+    width: 100px;
+}
+
+p{
+    font-size: 70px;
+    color: rgb(255, 243, 6);
+    text-align: center;
+}
+
+@keyframes animacao {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0.3;
+    }
+    50%{
+        opacity: 0.6;
+    }
+    75%{
+        opacity: 0.8;
+    }
+    100%{
+       opacity: 1;
+    }
+}
+
+@keyframes animacaoFundo {
+    0%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 0.8;
+    }
+    50%{
+        opacity: 0.6;
+    }
+    75%{
+        opacity: 0.3;
+    }
+    100%{
+       opacity: 0;
+    }
+}
+
+
 footer {
     margin-top: auto;
     display: flex;
@@ -44,15 +105,7 @@ footer {
     height: 60px;
 }
 
-
-@keyframes animation {
-    0%{
-        opacity: 1;
-    }
-    50%{
-        opacity: 0.5;
-    }
-    100%{
-        opacity: 0;
-    }
+footer p{
+    font-size: 40px;
+    color: rgb(233, 254, 0);
 }
